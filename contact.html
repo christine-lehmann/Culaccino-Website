@@ -20,23 +20,53 @@
 
 <!-- contact section starts  -->
 
-<section class="book" id="book">
+    <section class="book" id="book">
 
     <h1 class="heading"> CONTACT US <span>Reach Us Out!</span> </h1>
 
-    <form action="">
+<form name="contact-form">
 
-        <input type="text" placeholder="your name" class="box">
-        <input type="email" placeholder="your email" class="box">
-        <input type="number" placeholder="your number" class="box">
+        <!--<input name = "name" type="text" placeholder="your name" class="box">-->
 
-        <textarea name="" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>
+        <div class="form-control">
+            <input name="name" placeholder="your name" class="box" />
+            <div class="error hide">Name is required</div>
+          </div>
 
-        <input type="submit" value="send message" class="btn">
+        <!--<input name = "name" type="email" placeholder="your email" class="box">-->
+
+        <div class="form-control">
+            <input name="email" placeholder="your email" class="box"/>
+            <div class="error hide">Email is invalid</div>
+          </div>
+
+        <!--<input name = "name" type="number" placeholder="your number" class="box">-->
+           
+        <div class="form-control">
+            <input name="phone" type="number" placeholder="your number" class="box"></input>
+            <div class="error hide">Phone is invalid</div>
+          </div>
+
+        <!--<textarea name="message" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>-->
+
+        <div class="form-control">
+            <textarea name="message" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>
+            <div class="error hide">Message is required</div>
+            </div>
+        
+        
+        <!--<input type="submit" value="send message" class="btn">-->
+        <button type="submit" class="btn">send message</button>
 
     </form>
 
+    <div class="thank-you hide">
+        Thank you for your feedback! We'll get back to you soon!
+    </div>
+
 </section>
+
+
 
 <!-- contact section ends -->
 
@@ -64,6 +94,7 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="js/contact.js"></script>
 
 
 </body>

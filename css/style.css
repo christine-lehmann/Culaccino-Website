@@ -441,6 +441,26 @@ section{
 .book form .btn {
     border-radius: 1.5rem;
     margin-left: 35%;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+.book form .error {
+    color: red;
+}
+.book form .hide {
+    display: none;
+    
+}
+.book .thank-you{
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+
+}
+.book .hide {
+    display: none;
+    
 }
 .footer{
     display: flex;
