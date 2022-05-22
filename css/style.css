@@ -399,6 +399,7 @@ section{
     background:var(--main-color);
 }
 
+/*CONTACT US*/
 .book{
   
     height: 92vh;
@@ -462,6 +463,53 @@ section{
     display: none;
     
 }
+/*LOGIN FORM*/
+.account{
+  
+    height: 92vh;
+    background:url(../image/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.account form{
+    /*margin-top: -3rem;*/
+    margin:0 auto 2rem auto;
+    height: 75%;
+    max-width: 50rem;
+    background: rgba(247, 242, 242, 0.678);
+    /*border-radius: var(--border-radius-hover);*/
+    padding:3rem;
+    border:var(--border);
+}
+.account form .box{
+    width:100%;
+    padding:1rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    background: rgba(247, 242, 242, 0.678);
+    text-transform: none;
+    color:var(--main-color);
+    border:var(--border);
+    margin:.7rem 0;
+}
+
+.account form .box:focus{
+    border:var(--border-hover);
+}
+
+.account form textarea{
+    height:9rem;
+    resize: none;
+}
+.account form .btn {
+    border-radius: 1.5rem;
+    margin-left: 35%;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+
+
 .footer{
     display: flex;
     align-items: center;

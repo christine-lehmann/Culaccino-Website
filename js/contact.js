@@ -33,7 +33,7 @@ const validateInputs = () => {
   isFormValid = true;
   inputFields.forEach((input) => {
     input.classList.remove("invalid");
-    input.nextElementSibling.classList.add("hide");
+    //input.nextElementSibling.classList.add("hide");
 
     if (!input.isValid()) {
       input.classList.add("invalid");

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culaccino</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/logo.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+    <script src="https://kit.fontawesome.com/315c951427.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!--Login starts-->
+
+    <section class="account" id="account">
+
+        <h1 class="heading">JOIN NOW!<span>Create an account</span> </h1>
+
+        <form name="login-form">
+
+            <form action="" method="post">
+                <h3 style="font-size:25px; text-align: center"><i class="fa-solid fa-coffee-beans"></i>REGISTER</h3>
+                <!--<?php
+                if(isset($error)){
+                   foreach($error as $error){
+                      echo '<span class="error-msg">'.$error.'</span>';
+                   };
+                };
+                ?>-->
+                <input type="text" name="name" required placeholder="Enter your name" class="box">
+                <input type="email" name="email" required placeholder="Enter your email" class="box">
+                <input type="password" name="password" required placeholder="Enter your password" class="box">
+                <input type="password" name="cpassword" required placeholder="Confirm your password" class="box">
+
+                <input type="submit" name="submit" value="register now" class="btn">
+                <p style="margin-top: 10px; font-size:15px">Already have an account? <a href="login_form.php" style="color: #d7b98e;"><b>Login Here</b></a></p>
+             </form>   
+     
+    </form>
+
+     </section>
+
+<section class="footer">
+
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="home.html" class="logo"> culaccino <i class="fas fa-mug-hot"></i> </a>
+  
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="index.html">menu</a>
+        <a href="contact.html">contact</a>
+        <a href="login.html">login</a>
+    </nav>
+  
+    <a href="index.html" class="logo" style="margin-right: 10%;"><i class="fas fa-shopping-cart"></i></a>
+</section>
+
+<!-- footer section ends -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
