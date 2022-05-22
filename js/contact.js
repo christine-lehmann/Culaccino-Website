@@ -48,8 +48,10 @@ form.addEventListener("submit", (e) => {
   shouldValidate = true;
   validateInputs();
   if (isFormValid) {
-      form.remove();
-      thankYou.classList.remove("hide")
+    alert("Thank you for your feedback! We'll get back to you soon!");
+    window.location.href="home.html";
+     // form.remove();
+     // thankYou.classList.remove("hide")
     // TODO: DO AJAX REQUEST
   }
 });
