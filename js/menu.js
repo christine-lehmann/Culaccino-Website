@@ -1,89 +1,94 @@
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
+ /* const shopBtn = document.querySelector('.shopBtn')
+  const cartBtn = document.querySelector('.cartBtn')
+  const itemContainer = document.querySelector('.item-container')
+  const tbody = document.querySelector('.tbody')
+  const checkoutBtn = document.querySelector('.checkout-btn')
+  const shopSec = document.querySelector('.shop')
+  const cartSec = document.querySelector('.cart')
+  
+  shopBtn.addEventListener('click', ()=>{
+      cartSec.style.display="none"
+      shopSec.style.display="block"
+  })
+  
+  cartBtn.addEventListener('click', ()=>{
+      shopSec.style.display="none"
+      cartSec.style.display="block"
+  })*/
 
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-}
-
-let section = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .navbar a');
-
-window.onscroll = () =>{
-
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-
-  section.forEach(sec =>{
-
-    let top = window.scrollY;
-    let height = sec.offsetHeight;
-    let offset = sec.offsetTop - 150;
-    let id = sec.getAttribute('id');
-
-    if(top >= offset && top < offset + height){
-      navLinks.forEach(links =>{
-        links.classList.remove('active');
-        document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+  const btns = document.querySelectorAll('.btn-menu');
+  const storeProducts = document.querySelectorAll('.store-product');
+  // const search = document.getElementById(search);
+  
+  for (i = 0; i < btns.length; i++) {
+  
+      btns[i].addEventListener('click', (e) => {
+          e.preventDefault()
+          
+          const filter = e.target.dataset.filter;
+          console.log(filter);
+          
+          storeProducts.forEach((product)=> {
+              if (filter === 'all'){
+                  product.style.display = 'block'
+              } else {
+                  if (product.classList.contains(filter)){
+                      product.style.display = 'block'
+                  } else {
+                      product.style.display = 'none'
+                  }
+              }
+          });
       });
-    };
-
-  });
-
-}
-
-document.querySelector('#search-icon').onclick = () =>{
-  document.querySelector('#search-form').classList.toggle('active');
-}
-
-document.querySelector('#close').onclick = () =>{
-  document.querySelector('#search-form').classList.remove('active');
-}
-
-var swiper = new Swiper(".home-slider", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop:true,
-});
-
-var swiper = new Swiper(".review-slider", {
-  spaceBetween: 20,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  loop:true,
-  breakpoints: {
-    0: {
-        slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
-}
-
-function fadeOut(){
-  setInterval(loader, 3000);
-}
-
-window.onload = fadeOut;
+  };
+  
+  // SEARCH FILTER
+  const search = document.getElementById("search");
+  const productName = document.querySelectorAll(".product-details h2");
+  
+  // A BETTER WAY TO FILTER THROUGH THE PRODUCTS
+  search.addEventListener("keyup", filterProducts);
+  
+  
+  function filterProducts(e) {
+      const text = e.target.value.toLowerCase();
+      // console.log(productName[0]);
+      productName.forEach(function(product) {
+          const item = product.firstChild.textContent;
+          if (item.toLowerCase().indexOf(text) != -1) {
+              product.parentElement.parentElement.style.display = "block"
+          } else {
+              product.parentElement.parentElement.style.display = "none"
+          }
+      })
+  }
+  
+  
+  
+  // This code has been replaced by the function(filterProducts) above which does a better job
+  
+  // search.addEventListener("keyup", (e) => {
+  //     e.preventDefault();
+  //     const searchValue = search.value.toLowerCase().trim();
+  //     // alert(search.value);
+  
+      
+  //     for (i = 0; i < storeProducts.length; i++) {
+  //         if (storeProducts[i].classList.contains(searchValue)) {
+  //             storeProducts[i].style.display = 'block';
+  //         } else if (searchValue == "") {
+  //             storeProducts[i].style.display = 'block';
+  //         } else {
+  //             storeProducts[i].style.display = 'none';    
+  //         }
+  
+  //     //    if (searchValue == "") {
+  //     //     storeProducts[i].style.display = 'block';
+  //     //    }
+          
+  //     }
+  
+  // })
+  
+  
+   

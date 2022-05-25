@@ -555,6 +555,158 @@ section{
     
 }
 
+/*MENU*/
+
+.food-menu .container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.food-menu .img-responsive{
+    width: 100%;
+}
+.food-menu .img-curve{
+    border-radius: 15px;
+}
+
+.food-menu .text-right{
+    text-align: right;
+}
+.food-menu .text-center{
+    text-align: center;
+}
+.food-menu .text-left{
+    text-align: left;
+}
+.food-menu .text-white{
+    text-align: center;
+    color: #be9b6a;
+}
+
+.food-menu .clearfix{
+    clear: both;
+    float: none;
+}
+
+.food-menu a{
+    color: #BE8C63;
+    text-decoration: none;
+}
+.food-menu a:hover{
+    color: #614124;
+}
+
+.food-menu .btn{
+    margin-bottom: 15px;
+    padding-top: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.food-menu .btn-primary{
+    background-color: #d7b98e;
+    color: white;
+    cursor: pointer;
+}
+.food-menu .btn-primary:hover{
+    color: white;
+    background-color: #e3caa1;
+}
+.food-menu h2{
+    color: #be9b6a;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+.food-menu h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.food-menu h4{
+    font-size: 2rem;
+}
+.food-menu .float-container{
+    position: relative;
+}
+.food-menu .float-text{
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    left: 40%;
+}
+.food-menu fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+/* CSS for Food Search Section */
+
+.food-search{
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+/* CSS for Categories */
+.categories{
+    padding: 2% 0;
+    background-color: #fff;
+    /*background:url(../image/bg.jpg);*/
+    background-position: center;
+    background-size: cover;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+/* CSS for Food Menu */
+.food-menu{
+    padding: 2% 0;
+    background-color: #efe1c4;
+    /*background:url(../image/bg.jpg);*/
+    background-position: center;
+    background-size: cover;
+}
+.food-menu-box{
+    width: 45%;
+    margin: 2%;
+    padding: 3%;
+    float: right;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 2rem;
+    margin: 1% 0;
+}
+.food-detail{
+    font-size: 2rem;
+    color: #daa520;
+}
 
 .footer{
     display: flex;
