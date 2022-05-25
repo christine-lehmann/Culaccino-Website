@@ -700,14 +700,15 @@ section{
 }
 
 .food-price{
-    font-size: 2rem;
+    font-size: 25px;
     margin: 1% 0;
 }
 .food-detail{
     font-size: 2rem;
-    color: #daa520;
+    color: #ffd700;
 }
 
+/*FOOD CATEGORY*/
 .footer{
     display: flex;
     align-items: center;
