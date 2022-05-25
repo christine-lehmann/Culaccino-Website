@@ -622,6 +622,7 @@ section{
     font-size: 1.5rem;
 }
 .food-menu h4{
+    text-align: center;
     font-size: 2rem;
 }
 .food-menu .float-container{
@@ -709,6 +710,8 @@ section{
 }
 
 /*FOOD CATEGORY*/
+
+/*FOOTER*/
 .footer{
     display: flex;
     align-items: center;
