@@ -622,6 +622,7 @@ section{
     font-size: 1.5rem;
 }
 .food-menu h4{
+    color: #fff;
     text-align: center;
     font-size: 2rem;
 }
@@ -701,7 +702,8 @@ section{
 }
 
 .food-price{
-    font-size: 25px;
+    color: #fff;
+    font-size: 20px;
     margin: 1% 0;
 }
 .food-detail{
@@ -749,7 +751,9 @@ section{
     color: #fff;
     background:#d7b98e;
 }
-
+.card-body{
+    background-color: #be9b6a;
+}
 
 
 
